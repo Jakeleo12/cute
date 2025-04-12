@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мелания, с Днем святого Валентина!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe6f0, #ff99cc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            max-width: 700px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #ff4d94;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 25px;
+        }
+
+        .heart {
+            width: 120px;
+            height: 120px;
+            background: #ff4d94;
+            position: relative;
+            margin: 30px auto;
+            transform: rotate(-45deg);
+            animation: pulse 1.8s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 120px;
+            height: 120px;
+            background: #ff4d94;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -60px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 60px;
+            top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 35px;
+            background: #ff4d94;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: rotate(-45deg) scale(1);
+            }
+            50% {
+                transform: rotate(-45deg) scale(1.15);
+            }
+            100% {
+                transform: rotate(-45deg) scale(1);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            .heart {
+                width: 80px;
+                height: 80px;
+            }
+
+            .heart::before,
+            .heart::after {
+                width: 80px;
+                height: 80px;
+            }
+
+            .heart::before {
+                top: -40px;
+            }
+
+            .heart::after {
+                left: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Мелаша, милая моя!</h1>
+        <p>С Днем святого Валентина, я безумно люблю тебя малыш, ты самая лучшая и прекрасная. я счастлив быть с тобой всегда. Сейчас, когда тебе нелегко, хочу напомнить: ты невероятно сильная, и я верю в тебя. Выздоравливай, моя девочка, не грусти — я всегда поддержу тебя, и мы вместе преодолеем всё. Ты моё всё!</p>
+        <div class="heart"></div>
+        <a href="#" class="button">Ты — моё всё!</a>
+    </div>
+</body>
+</html>
